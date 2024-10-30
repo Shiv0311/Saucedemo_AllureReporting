@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/reportngClass.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/reportngClass.js"></script>
+  <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+  <script type="text/javascript" src="js/json-min.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		$('.tablesorter').tablesorter({sortList: [[0,0]]});
+	});
+  </script>
+</head>
+<body onload="doParse(); return false;" onkeypress="collapseExpand();">
+<div class="well well-large">
+	<b>Test Info</>
+	<table class="table">
+	  <tr>
+	    <th>Test Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Test name</span>
+			</div>
+	    </th>
+	    <th id="testNameId">SauceDemo Test</th> 
+	  </tr>
+	  <tr>
+	    <th>Test Class : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassId')"/>
+	    		<span class="tooltiptextCustom">Copy full path Class name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Class name</span>
+			</div>
+	    </th> 
+	    <th id="testClassId">com.pkg.functionality.TestLogin<br>com.pkg.functionality.AddtoCart<br>com.pkg.functionality.Checkout<br></th>
+	    <th id="testClassNameId" hidden="true">TestLogin<br>AddtoCart<br>Checkout<br></th>
+	  </tr>
+	  <tr>
+	    <th>Suite Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite name</span>
+			</div>
+		</th>
+	    <th id="suiteNameId">SauceD emo Test Suite</th>
+	  </tr>
+	  <tr>
+	    <th>Suite XML : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite full path name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite file name</span>
+			</div>
+	    </th> 
+	  	<th id="suiteXMLId">C:\Users\Shivkumar.K\Selenium-Workspace\SauceDemoTest\testng.xml</th>
+	  	<th id="suiteXMLNameId" hidden="true">testng.xml</th>
+	  </tr>
+	  	  <tr>
+	    <th>Total Time : </th>
+	    <th></th>
+	    <th>00:00:13</th> 
+	  </tr>
+	  <tr>
+	    <th>Total Steps : </th>
+	   	<th></th>
+	    <th>7</th> 
+	  </tr>
+	  <tr>
+	    <th>Status : </th>
+	    <th></th>
+	    <th><font color="red">FAIL</font></th> 
+	  </tr>
+	</table>
+</div>
+<div class="well well-large">
+	<div class="row">
+		<div class="col-xs-12">
+	        <div class="text-right">
+	            <button id="hideResults" type="button" class="btn-danger" onclick="collapseExpand(this);" onkeypress="collapseExpand(this);" class="btn pull-right" title="Click or Press Any key to collapse/expand All Failed Tests and Configuration Methods">Show Only Failures</button>
+	        </div>
+	    </div>
+	</div>
+	<table class="tablesorter" border="1">
+		<thead>
+		<tr>
+		<th class="headerTime">Time</th>
+		<th class="headerTime" width="12%">Info</th>
+		<th class="headerTime" width="88%">Test</th>
+		</tr>
+		</thead>
+		<tbody>
+		
+				
+				
+												
+											<tr>
+	<td class="time">1727080903518</td>
+	<td class="header failed" colspan="4" onClick="toggleElement('80c6084e-78bd-460d-ada5-f44a83b7e784','block');changeSingleIcon('span-80c6084e-78bd-460d-ada5-f44a83b7e784');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.pkg.functionality.Checkout</div>
+	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-80c6084e-78bd-460d-ada5-f44a83b7e784' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1727080903518</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>checkoutWithEmptyCart</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.323s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"Shivkumar", "Konnuri", "400708"</span><br>
+				<div class="noCollapse" id="80c6084e-78bd-460d-ada5-f44a83b7e784" style="display: block;">
+												Test started: checkoutWithEmptyCart
+												Test failed: checkoutWithEmptyCart with status: 2
+												<a href='C:\Users\Shivkumar.K\Selenium-Workspace\SauceDemoTest\screenshots\Screen_20240923_141143.png'> <img src='C:\Users\Shivkumar.K\Selenium-Workspace\SauceDemoTest\screenshots\Screen_20240923_141143.png' height='100' width='100'/> </a>
+									<a href="javascript:toggleElement('exception-80c6084e-78bd-460d-ada5-f44a83b7e784','block')" title="Click to expand/collapse"><b>java.lang.AssertionError: null</b></a><br/>
+		<div class="stackTrace" id="exception-80c6084e-78bd-460d-ada5-f44a83b7e784">
+					org.testng.Assert.fail(Assert.java:110)<br/>
+					org.testng.Assert.fail(Assert.java:115)<br/>
+					com.pkg.functionality.Checkout.checkoutWithEmptyCart(Checkout.java:99)<br/>
+					java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+					java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br/>
+					java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:568)<br/>
+					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)<br/>
+					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br/>
+					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br/>
+					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
+					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:806)<br/>
+					org.testng.TestRunner.run(TestRunner.java:601)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:433)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:330)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1099)<br/>
+					org.testng.TestNG.run(TestNG.java:1067)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+						
+				
+												<tr>
+			<td class="time">1727080902137</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('c0707178-492b-4a02-a618-06f470f32d0b','block');changeSingleIcon('span-c0707178-492b-4a02-a618-06f470f32d0b');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.pkg.functionality.AddtoCart</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-c0707178-492b-4a02-a618-06f470f32d0b' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1727080902137</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>addCartFunctionality</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.459s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="c0707178-492b-4a02-a618-06f470f32d0b" style="display: block;">
+												Test started: addCartFunctionality
+												Test passed: addCartFunctionality with status: 1
+								</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1727080902598</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('a800b80b-9b5e-4874-bcb9-018ca35d5270','block');changeSingleIcon('span-a800b80b-9b5e-4874-bcb9-018ca35d5270');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.pkg.functionality.AddtoCart</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-a800b80b-9b5e-4874-bcb9-018ca35d5270' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1727080902598</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>continueShopping</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.150s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="a800b80b-9b5e-4874-bcb9-018ca35d5270" style="display: block;">
+												Test started: continueShopping
+												Test passed: continueShopping with status: 1
+								</td>
+	</div>
+</tr>
+										<tr>
+			<td class="time">1727080902750</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('951681eb-8ca6-497f-abaf-b54fcf680ff0','block');changeSingleIcon('span-951681eb-8ca6-497f-abaf-b54fcf680ff0');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.pkg.functionality.Checkout</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-951681eb-8ca6-497f-abaf-b54fcf680ff0' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1727080902750</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>doCheckout</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.566s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"Shivkumar", "Konnuri", "400708"</span><br>
+				<div class="stackTrace" id="951681eb-8ca6-497f-abaf-b54fcf680ff0" style="display: block;">
+												Test started: doCheckout
+												Test passed: doCheckout with status: 1
+								</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1727080903318</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('c024b8e9-f2cc-4dbc-a79f-fa112ab265b1','block');changeSingleIcon('span-c024b8e9-f2cc-4dbc-a79f-fa112ab265b1');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.pkg.functionality.Checkout</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-c024b8e9-f2cc-4dbc-a79f-fa112ab265b1' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1727080903318</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>finishOrCancelCheckout</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.198s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"finish"</span><br>
+				<div class="stackTrace" id="c024b8e9-f2cc-4dbc-a79f-fa112ab265b1" style="display: block;">
+												Test started: finishOrCancelCheckout
+												Test passed: finishOrCancelCheckout with status: 1
+								</td>
+	</div>
+</tr>
+										<tr>
+			<td class="time">1727080891140</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('60684fae-8708-4f49-a844-f1581485d200','block');changeSingleIcon('span-60684fae-8708-4f49-a844-f1581485d200');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.pkg.functionality.TestLogin</div>
+			<div style="float:right;">@Test @ with DataProvider : ["create"] &nbsp;&nbsp;<span id='span-60684fae-8708-4f49-a844-f1581485d200' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1727080891140</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>loginTest</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>1.935s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"standard_user", "secret_sauce", "valid", "https://www.saucedemo.com/inventory.html"</span><br>
+				<div class="stackTrace" id="60684fae-8708-4f49-a844-f1581485d200" style="display: block;">
+												Test started: loginTest
+												Test passed: loginTest with status: 1
+								</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1727080893078</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('ab61c010-97ad-4e03-957e-844814971681','block');changeSingleIcon('span-ab61c010-97ad-4e03-957e-844814971681');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.pkg.functionality.TestLogin</div>
+			<div style="float:right;">@Test @ with DataProvider : ["create"] &nbsp;&nbsp;<span id='span-ab61c010-97ad-4e03-957e-844814971681' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1727080893078</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>loginTest</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.265s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"locked_out_user", "secret_sauce", "valid", "Epic sadface: Sorry, this user has been locked out."</span><br>
+				<div class="stackTrace" id="ab61c010-97ad-4e03-957e-844814971681" style="display: block;">
+												Test started: loginTest
+												Test passed: loginTest with status: 1
+								</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1727080900835</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('6950a4ab-89b5-4b5a-9038-02d0aa46c0f3','block');changeSingleIcon('span-6950a4ab-89b5-4b5a-9038-02d0aa46c0f3');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.pkg.functionality.TestLogin</div>
+			<div style="float:right;">@Test @ with DataProvider : ["create"] &nbsp;&nbsp;<span id='span-6950a4ab-89b5-4b5a-9038-02d0aa46c0f3' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1727080900835</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>loginTest</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.842s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"visual_user", "secret_sauce", "valid", "https://www.saucedemo.com/inventory.html"</span><br>
+				<div class="stackTrace" id="6950a4ab-89b5-4b5a-9038-02d0aa46c0f3" style="display: block;">
+												Test started: loginTest
+												Test passed: loginTest with status: 1
+								</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1727080893344</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('ad59cd62-1fe3-466f-9e23-e11919e674f4','block');changeSingleIcon('span-ad59cd62-1fe3-466f-9e23-e11919e674f4');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.pkg.functionality.TestLogin</div>
+			<div style="float:right;">@Test @ with DataProvider : ["create"] &nbsp;&nbsp;<span id='span-ad59cd62-1fe3-466f-9e23-e11919e674f4' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1727080893344</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>loginTest</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.827s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"problem_user", "secret_sauce", "valid", "https://www.saucedemo.com/inventory.html"</span><br>
+				<div class="stackTrace" id="ad59cd62-1fe3-466f-9e23-e11919e674f4" style="display: block;">
+												Test started: loginTest
+												Test passed: loginTest with status: 1
+								</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1727080900015</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('0415845a-7d9d-4c8f-893f-e20b888ed574','block');changeSingleIcon('span-0415845a-7d9d-4c8f-893f-e20b888ed574');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.pkg.functionality.TestLogin</div>
+			<div style="float:right;">@Test @ with DataProvider : ["create"] &nbsp;&nbsp;<span id='span-0415845a-7d9d-4c8f-893f-e20b888ed574' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1727080900015</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>loginTest</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.819s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"error_user", "secret_sauce", "valid", "https://www.saucedemo.com/inventory.html"</span><br>
+				<div class="stackTrace" id="0415845a-7d9d-4c8f-893f-e20b888ed574" style="display: block;">
+												Test started: loginTest
+												Test passed: loginTest with status: 1
+								</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1727080901678</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('9634c2d9-bedd-4ca4-ba8f-3a832e8311ff','block');changeSingleIcon('span-9634c2d9-bedd-4ca4-ba8f-3a832e8311ff');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.pkg.functionality.TestLogin</div>
+			<div style="float:right;">@Test @ with DataProvider : ["create"] &nbsp;&nbsp;<span id='span-9634c2d9-bedd-4ca4-ba8f-3a832e8311ff' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1727080901678</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>loginTest</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.228s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"shiv", "secret_sauce", "invalid", "Epic sadface: Username and password do not match any user in this service"</span><br>
+				<div class="stackTrace" id="9634c2d9-bedd-4ca4-ba8f-3a832e8311ff" style="display: block;">
+												Test started: loginTest
+												Test passed: loginTest with status: 1
+								</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1727080901914</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('3e8bd7f1-1889-4cc0-963f-0341045918cc','block');changeSingleIcon('span-3e8bd7f1-1889-4cc0-963f-0341045918cc');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.pkg.functionality.TestLogin</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-3e8bd7f1-1889-4cc0-963f-0341045918cc' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1727080901914</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>doLogin</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.219s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"standard_user", "secret_sauce"</span><br>
+				<div class="stackTrace" id="3e8bd7f1-1889-4cc0-963f-0341045918cc" style="display: block;">
+												Test started: doLogin
+												Test passed: doLogin with status: 1
+								</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1727080894172</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('d7c3f66c-d127-4142-9cbb-a2d5178c4c70','block');changeSingleIcon('span-d7c3f66c-d127-4142-9cbb-a2d5178c4c70');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.pkg.functionality.TestLogin</div>
+			<div style="float:right;">@Test @ with DataProvider : ["create"] &nbsp;&nbsp;<span id='span-d7c3f66c-d127-4142-9cbb-a2d5178c4c70' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1727080894172</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>loginTest</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>5.842s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"performance_glitch_user", "secret_sauce", "valid", "https://www.saucedemo.com/inventory.html"</span><br>
+				<div class="stackTrace" id="d7c3f66c-d127-4142-9cbb-a2d5178c4c70" style="display: block;">
+												Test started: loginTest
+												Test passed: loginTest with status: 1
+								</td>
+	</div>
+</tr>
+					  
+	</tbody>
+	</table>
+</div>
+</body>
+</html>

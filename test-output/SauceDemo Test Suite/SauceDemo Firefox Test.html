@@ -1,0 +1,310 @@
+<html>
+<head>
+<title>TestNG:  SauceDemo Firefox Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>SauceDemo Firefox Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/2/2</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 21 15:54:07 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>76 seconds (76867 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.pkg.functionality.AddtoCart.addCartFunctionality()'><b>addCartFunctionality</b><br>Test class: com.pkg.functionality.AddtoCart<br/>
+<a href="#Output-912399031" onClick='toggleBox("Output-912399031", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-912399031" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-912399031">
+Test started: addCartFunctionality<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //button[@data-test=&quot;add-to-cart-sauce-labs-backpack&quot;] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 131.0.3, moz:accessibilityChecks: false, moz:buildID: 20241011205646, moz:firefoxOptions: {args: [--start-maximized], binary: C:\Users\Shivkumar.K\.cache...}, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 30656, moz:profile: C:\Users\SHIVKU~1.K\AppData..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.100:4444/ses..., setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 749dfb2e-320f-4e7e-93ba-1b18bd37d413
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.pkg.functionality.AddtoCart.addCartFunctionality(AddtoCart.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace912399031", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace912399031'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //button[@data-test=&quot;add-to-cart-sauce-labs-backpack&quot;] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 131.0.3, moz:accessibilityChecks: false, moz:buildID: 20241011205646, moz:firefoxOptions: {args: [--start-maximized], binary: C:\Users\Shivkumar.K\.cache...}, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 30656, moz:profile: C:\Users\SHIVKU~1.K\AppData..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.100:4444/ses..., setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 749dfb2e-320f-4e7e-93ba-1b18bd37d413
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.pkg.functionality.AddtoCart.addCartFunctionality(AddtoCart.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>30</td>
+<td>com.pkg.functionality.AddtoCart@b83a9be</td></tr>
+<tr>
+<td title='com.pkg.functionality.Checkout.doCheckout()'><b>doCheckout</b><br>Test class: com.pkg.functionality.Checkout<br>Parameters: Shivkumar, Konnuri, 400708<br/>
+<a href="#Output-720035791" onClick='toggleBox("Output-720035791", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-720035791" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-720035791">
+Test started: doCheckout<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[@data-test=&quot;shopping-cart-link&quot;] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 131.0.3, moz:accessibilityChecks: false, moz:buildID: 20241011205646, moz:firefoxOptions: {args: [--start-maximized], binary: C:\Users\Shivkumar.K\.cache...}, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6864, moz:profile: C:\Users\SHIVKU~1.K\AppData..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.100:4444/ses..., setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 5796b78e-0b46-4997-a3bf-26a29650cdfd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.pkg.functionality.Checkout.doCheckout(Checkout.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace720035791", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace720035791'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[@data-test=&quot;shopping-cart-link&quot;] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 131.0.3, moz:accessibilityChecks: false, moz:buildID: 20241011205646, moz:firefoxOptions: {args: [--start-maximized], binary: C:\Users\Shivkumar.K\.cache...}, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6864, moz:profile: C:\Users\SHIVKU~1.K\AppData..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.100:4444/ses..., setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 5796b78e-0b46-4997-a3bf-26a29650cdfd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.pkg.functionality.Checkout.doCheckout(Checkout.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>30</td>
+<td>com.pkg.functionality.Checkout@2609b277</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.pkg.functionality.TestLogin.doLogin()'><b>doLogin</b><br>Test class: com.pkg.functionality.TestLogin<br>Parameters: standard_user, secret_sauce<br/>
+<a href="#Output-1393614906" onClick='toggleBox("Output-1393614906", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1393614906" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1393614906">
+Test started: doLogin<br/>
+Test passed: doLogin with status: 1<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.pkg.functionality.TestLogin@27adc16e</td></tr>
+<tr>
+<td title='com.pkg.functionality.TestLogin.doLogout()'><b>doLogout</b><br>Test class: com.pkg.functionality.TestLogin<br/>
+<a href="#Output-1258513080" onClick='toggleBox("Output-1258513080", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1258513080" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1258513080">
+Test started: doLogout<br/>
+Test passed: doLogout with status: 1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.pkg.functionality.TestLogin@27adc16e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.pkg.functionality.Checkout.finishOrCancelCheckout()'><b>finishOrCancelCheckout</b><br>Test class: com.pkg.functionality.Checkout<br/>
+<a href="#Output-29845165" onClick='toggleBox("Output-29845165", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-29845165" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29845165">
+Test skipped: finishOrCancelCheckout with status: 3<br/>
+</div>
+</td>
+<td><div><pre>java.lang.Throwable: Method com.pkg.functionality.Checkout.finishOrCancelCheckout() on instance com.pkg.functionality.Checkout@2609b277 depends on not successfully finished methods 
+[com.pkg.functionality.Checkout.doCheckout() on instance com.pkg.functionality.Checkout@2609b277]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace29845165", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace29845165'><pre>java.lang.Throwable: Method com.pkg.functionality.Checkout.finishOrCancelCheckout() on instance com.pkg.functionality.Checkout@2609b277 depends on not successfully finished methods 
+[com.pkg.functionality.Checkout.doCheckout() on instance com.pkg.functionality.Checkout@2609b277]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>com.pkg.functionality.Checkout@2609b277</td></tr>
+<tr>
+<td title='com.pkg.functionality.AddtoCart.continueShopping()'><b>continueShopping</b><br>Test class: com.pkg.functionality.AddtoCart<br/>
+<a href="#Output-34051547" onClick='toggleBox("Output-34051547", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-34051547" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-34051547">
+Test skipped: continueShopping with status: 3<br/>
+</div>
+</td>
+<td><div><pre>java.lang.Throwable: Method com.pkg.functionality.AddtoCart.continueShopping() on instance com.pkg.functionality.AddtoCart@b83a9be depends on not successfully finished methods 
+[com.pkg.functionality.AddtoCart.addCartFunctionality() on instance com.pkg.functionality.AddtoCart@b83a9be]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace34051547", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace34051547'><pre>java.lang.Throwable: Method com.pkg.functionality.AddtoCart.continueShopping() on instance com.pkg.functionality.AddtoCart@b83a9be depends on not successfully finished methods 
+[com.pkg.functionality.AddtoCart.addCartFunctionality() on instance com.pkg.functionality.AddtoCart@b83a9be]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>com.pkg.functionality.AddtoCart@b83a9be</td></tr>
+</table><p>
+</body>
+</html>

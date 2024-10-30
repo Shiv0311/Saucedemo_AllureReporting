@@ -1,0 +1,1250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="4" failed="4" skipped="10">
+  <reporter-output>
+    <line>
+      <![CDATA[Test started: doLogin]]>
+    </line>
+    <line>
+      <![CDATA[Test passed: doLogin with status: 1]]>
+    </line>
+    <line>
+      <![CDATA[Test started: doLogout]]>
+    </line>
+    <line>
+      <![CDATA[Test started: doLogin]]>
+    </line>
+    <line>
+      <![CDATA[Test passed: doLogout with status: 1]]>
+    </line>
+    <line>
+      <![CDATA[Test passed: doLogin with status: 1]]>
+    </line>
+    <line>
+      <![CDATA[Test started: doLogout]]>
+    </line>
+    <line>
+      <![CDATA[Test started: addCartFunctionality]]>
+    </line>
+    <line>
+      <![CDATA[Test passed: doLogout with status: 1]]>
+    </line>
+    <line>
+      <![CDATA[Test started: addCartFunctionality]]>
+    </line>
+    <line>
+      <![CDATA[Test started: continueShopping]]>
+    </line>
+    <line>
+      <![CDATA[Test skipped: continueShopping with status: 3]]>
+    </line>
+    <line>
+      <![CDATA[Test started: doCheckout]]>
+    </line>
+    <line>
+      <![CDATA[Test started: continueShopping]]>
+    </line>
+    <line>
+      <![CDATA[Test skipped: continueShopping with status: 3]]>
+    </line>
+    <line>
+      <![CDATA[Test started: doCheckout]]>
+    </line>
+    <line>
+      <![CDATA[Test started: finishOrCancelCheckout]]>
+    </line>
+    <line>
+      <![CDATA[Test skipped: finishOrCancelCheckout with status: 3]]>
+    </line>
+    <line>
+      <![CDATA[Test started: finishOrCancelCheckout]]>
+    </line>
+    <line>
+      <![CDATA[Test skipped: finishOrCancelCheckout with status: 3]]>
+    </line>
+    <line>
+      <![CDATA[Test started: doLogin]]>
+    </line>
+    <line>
+      <![CDATA[Test skipped: doLogin with status: 3]]>
+    </line>
+    <line>
+      <![CDATA[Test started: doLogout]]>
+    </line>
+    <line>
+      <![CDATA[Test skipped: doLogout with status: 3]]>
+    </line>
+    <line>
+      <![CDATA[Test started: addCartFunctionality]]>
+    </line>
+    <line>
+      <![CDATA[Test skipped: addCartFunctionality with status: 3]]>
+    </line>
+    <line>
+      <![CDATA[Test started: continueShopping]]>
+    </line>
+    <line>
+      <![CDATA[Test skipped: continueShopping with status: 3]]>
+    </line>
+    <line>
+      <![CDATA[Test started: doCheckout]]>
+    </line>
+    <line>
+      <![CDATA[Test skipped: doCheckout with status: 3]]>
+    </line>
+    <line>
+      <![CDATA[Test started: finishOrCancelCheckout]]>
+    </line>
+    <line>
+      <![CDATA[Test skipped: finishOrCancelCheckout with status: 3]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-10-21T15:54:07 IST" name="SauceDemo Test Suite" finished-at="2024-10-21T16:03:08 IST" duration-ms="540571">
+    <groups>
+    </groups>
+    <test started-at="2024-10-21T15:54:07 IST" name="SauceDemo Chrome Test" finished-at="2024-10-21T15:55:16 IST" duration-ms="69003">
+      <class name="com.pkg.functionality.AddtoCart">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.pkg.functionality.AddtoCart@52e7a6b2]" started-at="2024-10-21T15:54:12 IST" name="setUp" finished-at="2024-10-21T15:54:14 IST" duration-ms="1760" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pkg.functionality.AddtoCart@52e7a6b2]" started-at="2024-10-21T15:54:14 IST" name="setUp" finished-at="2024-10-21T15:54:14 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addCartFunctionality()[pri:0, instance:com.pkg.functionality.AddtoCart@52e7a6b2]" started-at="2024-10-21T15:54:14 IST" name="addCartFunctionality" finished-at="2024-10-21T15:54:44 IST" depends-on-methods="com.pkg.functionality.TestLogin.doLogin" duration-ms="30011" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //button[@data-test="add-to-cart-sauce-labs-backpack"] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\SHIVKU~1.K\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52830}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.100:4444/ses..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c793bd48f7427c4baecbc9dbaf525546]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //button[@data-test="add-to-cart-sauce-labs-backpack"] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\SHIVKU~1.K\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52830}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.100:4444/ses..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c793bd48f7427c4baecbc9dbaf525546
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.pkg.functionality.AddtoCart.addCartFunctionality(AddtoCart.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test started: addCartFunctionality]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCartFunctionality -->
+        <test-method signature="continueShopping()[pri:0, instance:com.pkg.functionality.AddtoCart@52e7a6b2]" started-at="2024-10-21T15:54:44 IST" name="continueShopping" finished-at="2024-10-21T15:54:44 IST" depends-on-methods="com.pkg.functionality.AddtoCart.addCartFunctionality" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.pkg.functionality.AddtoCart.continueShopping() on instance com.pkg.functionality.AddtoCart@52e7a6b2 depends on not successfully finished methods 
+[com.pkg.functionality.AddtoCart.addCartFunctionality() on instance com.pkg.functionality.AddtoCart@52e7a6b2]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.pkg.functionality.AddtoCart.continueShopping() on instance com.pkg.functionality.AddtoCart@52e7a6b2 depends on not successfully finished methods 
+[com.pkg.functionality.AddtoCart.addCartFunctionality() on instance com.pkg.functionality.AddtoCart@52e7a6b2]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test skipped: continueShopping with status: 3]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- continueShopping -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pkg.functionality.AddtoCart@52e7a6b2]" started-at="2024-10-21T15:54:44 IST" name="tearDown" finished-at="2024-10-21T15:54:44 IST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.pkg.functionality.AddtoCart -->
+      <class name="com.pkg.functionality.Checkout">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.pkg.functionality.Checkout@29a5f4e7]" started-at="2024-10-21T15:54:44 IST" name="setUp" finished-at="2024-10-21T15:54:46 IST" duration-ms="1447" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pkg.functionality.Checkout@29a5f4e7]" started-at="2024-10-21T15:54:46 IST" name="setUp" finished-at="2024-10-21T15:54:46 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="doCheckout(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pkg.functionality.Checkout@29a5f4e7]" started-at="2024-10-21T15:54:46 IST" name="doCheckout" finished-at="2024-10-21T15:55:16 IST" depends-on-methods="com.pkg.functionality.AddtoCart.continueShopping" duration-ms="30503" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Shivkumar]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Konnuri]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[400708]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //a[@data-test="shopping-cart-link"] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\SHIVKU~1.K\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52949}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.100:4444/ses..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c733aa40963c95ff52d131c193259b6c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[@data-test="shopping-cart-link"] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\SHIVKU~1.K\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52949}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.100:4444/ses..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c733aa40963c95ff52d131c193259b6c
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.pkg.functionality.Checkout.doCheckout(Checkout.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test started: doCheckout]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- doCheckout -->
+        <test-method signature="finishOrCancelCheckout(java.lang.String)[pri:0, instance:com.pkg.functionality.Checkout@29a5f4e7]" started-at="2024-10-21T15:55:16 IST" name="finishOrCancelCheckout" finished-at="2024-10-21T15:55:16 IST" depends-on-methods="com.pkg.functionality.Checkout.doCheckout" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.pkg.functionality.Checkout.finishOrCancelCheckout() on instance com.pkg.functionality.Checkout@29a5f4e7 depends on not successfully finished methods 
+[com.pkg.functionality.Checkout.doCheckout() on instance com.pkg.functionality.Checkout@29a5f4e7]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.pkg.functionality.Checkout.finishOrCancelCheckout() on instance com.pkg.functionality.Checkout@29a5f4e7 depends on not successfully finished methods 
+[com.pkg.functionality.Checkout.doCheckout() on instance com.pkg.functionality.Checkout@29a5f4e7]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test skipped: finishOrCancelCheckout with status: 3]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- finishOrCancelCheckout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pkg.functionality.Checkout@29a5f4e7]" started-at="2024-10-21T15:55:16 IST" name="tearDown" finished-at="2024-10-21T15:55:16 IST" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.pkg.functionality.Checkout -->
+      <class name="com.pkg.functionality.TestLogin">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.pkg.functionality.TestLogin@20d7d6fb]" started-at="2024-10-21T15:54:07 IST" name="setUp" finished-at="2024-10-21T15:54:09 IST" duration-ms="1846" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="doLogin(java.lang.String,java.lang.String)[pri:0, instance:com.pkg.functionality.TestLogin@20d7d6fb]" started-at="2024-10-21T15:54:09 IST" name="doLogin" finished-at="2024-10-21T15:54:11 IST" duration-ms="1642" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test started: doLogin]]>
+            </line>
+            <line>
+              <![CDATA[Test passed: doLogin with status: 1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method signature="doLogout()[pri:0, instance:com.pkg.functionality.TestLogin@20d7d6fb]" started-at="2024-10-21T15:54:11 IST" name="doLogout" finished-at="2024-10-21T15:54:12 IST" depends-on-methods="com.pkg.functionality.TestLogin.doLogin" duration-ms="675" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test started: doLogout]]>
+            </line>
+            <line>
+              <![CDATA[Test passed: doLogout with status: 1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- doLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pkg.functionality.TestLogin@20d7d6fb]" started-at="2024-10-21T15:54:12 IST" name="tearDown" finished-at="2024-10-21T15:54:12 IST" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.pkg.functionality.TestLogin -->
+    </test> <!-- SauceDemo Chrome Test -->
+    <test started-at="2024-10-21T15:54:07 IST" name="SauceDemo Firefox Test" finished-at="2024-10-21T15:55:24 IST" duration-ms="76867">
+      <class name="com.pkg.functionality.AddtoCart">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.pkg.functionality.AddtoCart@b83a9be]" started-at="2024-10-21T15:54:15 IST" name="setUp" finished-at="2024-10-21T15:54:18 IST" duration-ms="3072" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pkg.functionality.AddtoCart@b83a9be]" started-at="2024-10-21T15:54:18 IST" name="setUp" finished-at="2024-10-21T15:54:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addCartFunctionality()[pri:0, instance:com.pkg.functionality.AddtoCart@b83a9be]" started-at="2024-10-21T15:54:18 IST" name="addCartFunctionality" finished-at="2024-10-21T15:54:48 IST" depends-on-methods="com.pkg.functionality.TestLogin.doLogin" duration-ms="30518" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //button[@data-test="add-to-cart-sauce-labs-backpack"] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 131.0.3, moz:accessibilityChecks: false, moz:buildID: 20241011205646, moz:firefoxOptions: {args: [--start-maximized], binary: C:\Users\Shivkumar.K\.cache...}, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 30656, moz:profile: C:\Users\SHIVKU~1.K\AppData..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.100:4444/ses..., setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 749dfb2e-320f-4e7e-93ba-1b18bd37d413]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //button[@data-test="add-to-cart-sauce-labs-backpack"] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 131.0.3, moz:accessibilityChecks: false, moz:buildID: 20241011205646, moz:firefoxOptions: {args: [--start-maximized], binary: C:\Users\Shivkumar.K\.cache...}, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 30656, moz:profile: C:\Users\SHIVKU~1.K\AppData..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.100:4444/ses..., setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 749dfb2e-320f-4e7e-93ba-1b18bd37d413
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.pkg.functionality.AddtoCart.addCartFunctionality(AddtoCart.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test started: addCartFunctionality]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCartFunctionality -->
+        <test-method signature="continueShopping()[pri:0, instance:com.pkg.functionality.AddtoCart@b83a9be]" started-at="2024-10-21T15:54:48 IST" name="continueShopping" finished-at="2024-10-21T15:54:48 IST" depends-on-methods="com.pkg.functionality.AddtoCart.addCartFunctionality" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.pkg.functionality.AddtoCart.continueShopping() on instance com.pkg.functionality.AddtoCart@b83a9be depends on not successfully finished methods 
+[com.pkg.functionality.AddtoCart.addCartFunctionality() on instance com.pkg.functionality.AddtoCart@b83a9be]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.pkg.functionality.AddtoCart.continueShopping() on instance com.pkg.functionality.AddtoCart@b83a9be depends on not successfully finished methods 
+[com.pkg.functionality.AddtoCart.addCartFunctionality() on instance com.pkg.functionality.AddtoCart@b83a9be]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test skipped: continueShopping with status: 3]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- continueShopping -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pkg.functionality.AddtoCart@b83a9be]" started-at="2024-10-21T15:54:48 IST" name="tearDown" finished-at="2024-10-21T15:54:50 IST" duration-ms="1161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.pkg.functionality.AddtoCart -->
+      <class name="com.pkg.functionality.Checkout">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.pkg.functionality.Checkout@2609b277]" started-at="2024-10-21T15:54:50 IST" name="setUp" finished-at="2024-10-21T15:54:53 IST" duration-ms="3160" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pkg.functionality.Checkout@2609b277]" started-at="2024-10-21T15:54:53 IST" name="setUp" finished-at="2024-10-21T15:54:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="doCheckout(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pkg.functionality.Checkout@2609b277]" started-at="2024-10-21T15:54:53 IST" name="doCheckout" finished-at="2024-10-21T15:55:23 IST" depends-on-methods="com.pkg.functionality.AddtoCart.continueShopping" duration-ms="30393" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Shivkumar]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Konnuri]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[400708]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //a[@data-test="shopping-cart-link"] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 131.0.3, moz:accessibilityChecks: false, moz:buildID: 20241011205646, moz:firefoxOptions: {args: [--start-maximized], binary: C:\Users\Shivkumar.K\.cache...}, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6864, moz:profile: C:\Users\SHIVKU~1.K\AppData..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.100:4444/ses..., setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 5796b78e-0b46-4997-a3bf-26a29650cdfd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[@data-test="shopping-cart-link"] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 131.0.3, moz:accessibilityChecks: false, moz:buildID: 20241011205646, moz:firefoxOptions: {args: [--start-maximized], binary: C:\Users\Shivkumar.K\.cache...}, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6864, moz:profile: C:\Users\SHIVKU~1.K\AppData..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.100:4444/ses..., setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 5796b78e-0b46-4997-a3bf-26a29650cdfd
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.pkg.functionality.Checkout.doCheckout(Checkout.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test started: doCheckout]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- doCheckout -->
+        <test-method signature="finishOrCancelCheckout(java.lang.String)[pri:0, instance:com.pkg.functionality.Checkout@2609b277]" started-at="2024-10-21T15:55:23 IST" name="finishOrCancelCheckout" finished-at="2024-10-21T15:55:23 IST" depends-on-methods="com.pkg.functionality.Checkout.doCheckout" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.pkg.functionality.Checkout.finishOrCancelCheckout() on instance com.pkg.functionality.Checkout@2609b277 depends on not successfully finished methods 
+[com.pkg.functionality.Checkout.doCheckout() on instance com.pkg.functionality.Checkout@2609b277]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.pkg.functionality.Checkout.finishOrCancelCheckout() on instance com.pkg.functionality.Checkout@2609b277 depends on not successfully finished methods 
+[com.pkg.functionality.Checkout.doCheckout() on instance com.pkg.functionality.Checkout@2609b277]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test skipped: finishOrCancelCheckout with status: 3]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- finishOrCancelCheckout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pkg.functionality.Checkout@2609b277]" started-at="2024-10-21T15:55:23 IST" name="tearDown" finished-at="2024-10-21T15:55:24 IST" duration-ms="980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.pkg.functionality.Checkout -->
+      <class name="com.pkg.functionality.TestLogin">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.pkg.functionality.TestLogin@27adc16e]" started-at="2024-10-21T15:54:07 IST" name="setUp" finished-at="2024-10-21T15:54:11 IST" duration-ms="3745" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="doLogin(java.lang.String,java.lang.String)[pri:0, instance:com.pkg.functionality.TestLogin@27adc16e]" started-at="2024-10-21T15:54:11 IST" name="doLogin" finished-at="2024-10-21T15:54:13 IST" duration-ms="1991" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test started: doLogin]]>
+            </line>
+            <line>
+              <![CDATA[Test passed: doLogin with status: 1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method signature="doLogout()[pri:0, instance:com.pkg.functionality.TestLogin@27adc16e]" started-at="2024-10-21T15:54:13 IST" name="doLogout" finished-at="2024-10-21T15:54:14 IST" depends-on-methods="com.pkg.functionality.TestLogin.doLogin" duration-ms="583" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test started: doLogout]]>
+            </line>
+            <line>
+              <![CDATA[Test passed: doLogout with status: 1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- doLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pkg.functionality.TestLogin@27adc16e]" started-at="2024-10-21T15:54:14 IST" name="tearDown" finished-at="2024-10-21T15:54:15 IST" duration-ms="954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.pkg.functionality.TestLogin -->
+    </test> <!-- SauceDemo Firefox Test -->
+    <test started-at="2024-10-21T15:54:07 IST" name="SauceDemo Edge Test" finished-at="2024-10-21T16:03:08 IST" duration-ms="540571">
+      <class name="com.pkg.functionality.AddtoCart">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.pkg.functionality.AddtoCart@4066c471]" started-at="2024-10-21T15:57:08 IST" name="setUp" finished-at="2024-10-21T16:00:08 IST" duration-ms="180023" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'SAK-LAPPDC262', ip: '192.168.1.100']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'SAK-LAPPDC262', ip: '192.168.1.100'
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:234)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at com.pkg.common.BaseDriver.setUp(BaseDriver.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: driver.version: BaseDriver
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:399)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:355)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:89)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+... 24 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:382)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pkg.functionality.AddtoCart@4066c471]" started-at="2024-10-21T16:00:08 IST" name="setUp" finished-at="2024-10-21T16:00:08 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Driver must be set]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Driver must be set
+at org.openqa.selenium.internal.Require.nonNull(Require.java:61)
+at org.openqa.selenium.interactions.Actions.<init>(Actions.java:64)
+at org.openqa.selenium.interactions.Actions.<init>(Actions.java:60)
+at com.pkg.functionality.AddtoCart.setUp(AddtoCart.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addCartFunctionality()[pri:0, instance:com.pkg.functionality.AddtoCart@4066c471]" started-at="2024-10-21T16:00:08 IST" name="addCartFunctionality" finished-at="2024-10-21T16:00:08 IST" depends-on-methods="com.pkg.functionality.TestLogin.doLogin" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'SAK-LAPPDC262', ip: '192.168.1.100']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'SAK-LAPPDC262', ip: '192.168.1.100'
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:234)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at com.pkg.common.BaseDriver.setUp(BaseDriver.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: driver.version: BaseDriver
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:399)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:355)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:89)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+... 24 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:382)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test skipped: addCartFunctionality with status: 3]]>
+            </line>
+            <line>
+              <![CDATA[Test started: continueShopping]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCartFunctionality -->
+        <test-method signature="continueShopping()[pri:0, instance:com.pkg.functionality.AddtoCart@4066c471]" started-at="2024-10-21T16:00:08 IST" name="continueShopping" finished-at="2024-10-21T16:00:08 IST" depends-on-methods="com.pkg.functionality.AddtoCart.addCartFunctionality" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.pkg.functionality.AddtoCart.continueShopping() on instance com.pkg.functionality.AddtoCart@4066c471 depends on not successfully finished methods 
+[com.pkg.functionality.AddtoCart.addCartFunctionality() on instance com.pkg.functionality.AddtoCart@4066c471]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.pkg.functionality.AddtoCart.continueShopping() on instance com.pkg.functionality.AddtoCart@4066c471 depends on not successfully finished methods 
+[com.pkg.functionality.AddtoCart.addCartFunctionality() on instance com.pkg.functionality.AddtoCart@4066c471]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test skipped: continueShopping with status: 3]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- continueShopping -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pkg.functionality.AddtoCart@4066c471]" started-at="2024-10-21T16:00:08 IST" name="tearDown" finished-at="2024-10-21T16:00:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.pkg.functionality.AddtoCart -->
+      <class name="com.pkg.functionality.Checkout">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.pkg.functionality.Checkout@2b175c00]" started-at="2024-10-21T16:00:08 IST" name="setUp" finished-at="2024-10-21T16:03:08 IST" duration-ms="180020" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'SAK-LAPPDC262', ip: '192.168.1.100']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'SAK-LAPPDC262', ip: '192.168.1.100'
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:234)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at com.pkg.common.BaseDriver.setUp(BaseDriver.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: driver.version: BaseDriver
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:399)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:355)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:89)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+... 24 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:382)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pkg.functionality.Checkout@2b175c00]" started-at="2024-10-21T16:03:08 IST" name="setUp" finished-at="2024-10-21T16:03:08 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Driver must be set]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Driver must be set
+at org.openqa.selenium.internal.Require.nonNull(Require.java:61)
+at org.openqa.selenium.interactions.Actions.<init>(Actions.java:64)
+at org.openqa.selenium.interactions.Actions.<init>(Actions.java:60)
+at com.pkg.functionality.Checkout.setUp(Checkout.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="doCheckout(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pkg.functionality.Checkout@2b175c00]" started-at="2024-10-21T16:03:08 IST" name="doCheckout" finished-at="2024-10-21T16:03:08 IST" depends-on-methods="com.pkg.functionality.AddtoCart.continueShopping" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Shivkumar]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Konnuri]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[400708]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Driver must be set]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Driver must be set
+at org.openqa.selenium.internal.Require.nonNull(Require.java:61)
+at org.openqa.selenium.interactions.Actions.<init>(Actions.java:64)
+at org.openqa.selenium.interactions.Actions.<init>(Actions.java:60)
+at com.pkg.functionality.Checkout.setUp(Checkout.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test skipped: doCheckout with status: 3]]>
+            </line>
+            <line>
+              <![CDATA[Test started: finishOrCancelCheckout]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- doCheckout -->
+        <test-method signature="finishOrCancelCheckout(java.lang.String)[pri:0, instance:com.pkg.functionality.Checkout@2b175c00]" started-at="2024-10-21T16:03:08 IST" name="finishOrCancelCheckout" finished-at="2024-10-21T16:03:08 IST" depends-on-methods="com.pkg.functionality.Checkout.doCheckout" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.pkg.functionality.Checkout.finishOrCancelCheckout() on instance com.pkg.functionality.Checkout@2b175c00 depends on not successfully finished methods 
+[com.pkg.functionality.Checkout.doCheckout() on instance com.pkg.functionality.Checkout@2b175c00]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.pkg.functionality.Checkout.finishOrCancelCheckout() on instance com.pkg.functionality.Checkout@2b175c00 depends on not successfully finished methods 
+[com.pkg.functionality.Checkout.doCheckout() on instance com.pkg.functionality.Checkout@2b175c00]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test skipped: finishOrCancelCheckout with status: 3]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- finishOrCancelCheckout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pkg.functionality.Checkout@2b175c00]" started-at="2024-10-21T16:03:08 IST" name="tearDown" finished-at="2024-10-21T16:03:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.pkg.functionality.Checkout -->
+      <class name="com.pkg.functionality.TestLogin">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.pkg.functionality.TestLogin@563e4951]" started-at="2024-10-21T15:54:07 IST" name="setUp" finished-at="2024-10-21T15:57:08 IST" duration-ms="180381" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'SAK-LAPPDC262', ip: '192.168.1.100']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'SAK-LAPPDC262', ip: '192.168.1.100'
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:234)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at com.pkg.common.BaseDriver.setUp(BaseDriver.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: driver.version: BaseDriver
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:399)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:355)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:89)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+... 24 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:382)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="doLogin(java.lang.String,java.lang.String)[pri:0, instance:com.pkg.functionality.TestLogin@563e4951]" started-at="2024-10-21T15:57:08 IST" name="doLogin" finished-at="2024-10-21T15:57:08 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'SAK-LAPPDC262', ip: '192.168.1.100']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'SAK-LAPPDC262', ip: '192.168.1.100'
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:234)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at com.pkg.common.BaseDriver.setUp(BaseDriver.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: driver.version: BaseDriver
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:399)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:355)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:89)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+... 24 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:382)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test skipped: doLogin with status: 3]]>
+            </line>
+            <line>
+              <![CDATA[Test started: doLogout]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method signature="doLogout()[pri:0, instance:com.pkg.functionality.TestLogin@563e4951]" started-at="2024-10-21T15:57:08 IST" name="doLogout" finished-at="2024-10-21T15:57:08 IST" depends-on-methods="com.pkg.functionality.TestLogin.doLogin" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.pkg.functionality.TestLogin.doLogout() on instance com.pkg.functionality.TestLogin@563e4951 depends on not successfully finished methods 
+[com.pkg.functionality.TestLogin.doLogin() on instance com.pkg.functionality.TestLogin@563e4951]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.pkg.functionality.TestLogin.doLogout() on instance com.pkg.functionality.TestLogin@563e4951 depends on not successfully finished methods 
+[com.pkg.functionality.TestLogin.doLogin() on instance com.pkg.functionality.TestLogin@563e4951]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test skipped: doLogout with status: 3]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- doLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pkg.functionality.TestLogin@563e4951]" started-at="2024-10-21T15:57:08 IST" name="tearDown" finished-at="2024-10-21T15:57:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.pkg.functionality.TestLogin -->
+    </test> <!-- SauceDemo Edge Test -->
+  </suite> <!-- SauceDemo Test Suite -->
+</testng-results>
